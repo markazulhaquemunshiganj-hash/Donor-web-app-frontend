@@ -7,12 +7,18 @@ export default function DonorForm(){
   const [bookNo, setBookNo] = useState('');
   const [address, setAddress] = useState('');
 
-  const submit = async (e) => {
-    e.preventDefault();
+ const submit = async (e) => {
+  e.preventDefault();
+  try {
     await API.post('/donors', { name, phone, book_no: bookNo, address });
     setName(''); setPhone(''); setBookNo(''); setAddress('');
-    alert('দাতা যুক্ত হয়েছে');
+    alert('✅ দাতা যুক্ত হয়েছে');
+  } catch (err) {
+    console.error('Error adding donor:', err);
+    alert('❌ দাতা যুক্ত করতে সমস্যা হয়েছে! আবার চেষ্টা করুন।');
   }
+};
+
 
   return (
     <form onSubmit={submit} style={{ display: 'grid', gap: 8 }}>
