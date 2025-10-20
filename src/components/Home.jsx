@@ -9,7 +9,7 @@ export default function App(){
     <div style={{ maxWidth: 900, margin: '20px auto', padding: 20 }}>
       
       <h1> মারকাযুল হক মুন্সিগঞ্জ (চাম্পাতলা মাদরাসা) </h1>
-      <h3 style={{alignContent:'center'}}> চাম্পাতলা, পঞ্চসার, মুন্সিগঞ্জ সদর, মুন্সিগঞ্জ </h3>
+      <h3 style={{alignContent:'center', textAlign:'center'}}> চাম্পাতলা, পঞ্চসার, মুন্সিগঞ্জ সদর, মুন্সিগঞ্জ </h3>
       
       <section>
         <DonorList/ >
