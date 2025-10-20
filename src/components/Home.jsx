@@ -1,8 +1,8 @@
 import React from 'react';
-import DonorForm from './components/DonorForm';
-import DonationForm from './components/DonationForm';
-import DueList from './components/DueList';
-import DonorList from './components/DonorList';
+import DonorForm from './DonorForm'; 
+import DonationForm from './DonationForm';
+import DueList from './DueList';
+import DonorList from './DonorList';
 
 export default function App(){
   return (
