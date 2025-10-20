@@ -7,7 +7,10 @@ import DonorList from './DonorList';
 export default function App(){
   return (
     <div style={{ maxWidth: 900, margin: '20px auto', padding: 20 }}>
-      <h1>Donor Manager (MongoDB)</h1>
+      
+      <h1> মারকাযুল হক মুন্সিগঞ্জ (চাম্পাতলা মাদরাসা) </h1>
+      <h1> চাম্পাতলা, পঞ্চসার, মুন্সিগঞ্জ সদর, মুন্সিগঞ্জ </h1>
+      
       <section>
         <DonorList/ >
       </section>
